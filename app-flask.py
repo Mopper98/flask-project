@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route("/")
 def hello():
     return jsonify({
-        "message": "THIS PULL REQUEST",
+        "message": "HELLO FROM automated Docker Build",
         "pod": os.environ.get("MY_POD", "unknown"),
 	"python_version": sys.version
     })
